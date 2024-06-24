@@ -1,2 +1,2 @@
+ng lint --fix
 ng test --watch=false
-ng lint
