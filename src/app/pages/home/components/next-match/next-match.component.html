@@ -1,0 +1,52 @@
+<ion-card class="ion-padding">
+  <ion-card-header class="ion-no-padding">
+    <ion-grid>
+      <ion-row class="ion-justify-content-center ion-align-items-center">
+        <ion-col size="auto">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/KORONA_kielce_50.png/1200px-KORONA_kielce_50.png"
+            alt="Badge of the Korona Kielce football club"
+            height="64"
+          />
+        </ion-col>
+        <ion-col size="auto">
+          <ion-card-title class="ion-align-items-center">
+            {{ eventTitle() }}
+          </ion-card-title>
+        </ion-col>
+        <ion-col size="auto">
+          <img
+            src="https://seeklogo.com/images/M/motor-lublin-sa-logo-78AD5E5C15-seeklogo.com.png"
+            alt="Badge of the Motor Lublin football club"
+            height="64"
+          />
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-justify-content-center">
+        <ion-col size="auto">
+          <ion-card-subtitle>Upcoming Match</ion-card-subtitle>
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-justify-content-center">
+        <ion-col size="auto">
+          <ion-card-content class="ion-no-padding">
+            {{ eventDetails() }}
+          </ion-card-content>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="ion-justify-content-center">
+        <ion-col size="auto">
+          <ion-button
+            color="primary"
+            id="open-prediction-modal"
+            (click)="openModal()"
+          >
+            Predict
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card-header>
+</ion-card>

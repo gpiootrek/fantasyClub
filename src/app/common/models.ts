@@ -41,3 +41,28 @@ export interface PlayerStatistics {
   mvps: number;
   cleanSheets: number;
 }
+
+export interface MatchPrediction {
+  matchId: string;
+  homeTeamScore: number;
+  awayTeamScore: number;
+  firstGoalScorerId: string;
+  lineup: TeamLineup;
+}
+
+export interface TeamLineup {
+  formation: Formation;
+  goalkeeper: Player;
+  defenders: Player[];
+  midfielders: Player[];
+  attackers: Player[];
+}
+
+export enum Formation {
+  FOUR_FOUR_TWO = '4-4-2',
+  FOUR_TWO_THREE_ONE = '4-2-3-1',
+  FOUR_THREE_THREE = '4-3-3',
+  FOUR_FIVE_ONE = '4-5-1',
+  THREE_FIVE_TWO = '3-5-2',
+  THREE_FOUR_THREE = '3-4-3',
+}

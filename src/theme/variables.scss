@@ -18,3 +18,13 @@
 
   --ion-primary-gradient: linear-gradient(147deg, #ffe53b 0%, #ff2525 74%);
 }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    .ios,
+    .md {
+      --ion-background-color: rgb(29, 28, 28);
+      --ion-toolbar-background: rgb(31, 27, 27);
+    }
+  }
+}
